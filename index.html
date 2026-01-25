@@ -1,97 +1,113 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="kn">
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
+  <title>Karnataka Scam Awareness</title>
 
   <style>
     body {
       margin: 0;
       min-height: 100vh;
-      background-image: url("karnataka.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      background: linear-gradient(135deg, #1e293b, #020617);
       font-family: Arial, sans-serif;
       color: #e5e7eb;
     }
 
-    /* NEWS BAR */
-    .news-bar {
-      background-color: #020617;
+    .header {
+      background: #020617;
+      padding: 12px;
       color: #facc15;
+      font-weight: bold;
       overflow: hidden;
       white-space: nowrap;
-      padding: 10px 0;
     }
 
-    .news-text {
+    .header span {
       display: inline-block;
       padding-left: 100%;
-      animation: scrollNews 18s linear infinite;
+      animation: scroll 16s linear infinite;
     }
 
-    @keyframes scrollNews {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-100%);
-      }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
     }
 
-    /* MAIN CONTENT */
     .container {
-      background-color: rgba(15, 23, 42, 0.75);
-      max-width: 600px;
+      max-width: 700px;
       margin: 40px auto;
-      padding: 20px;
+      background: rgba(15, 23, 42, 0.85);
+      padding: 24px;
       border-radius: 12px;
+    }
+
+    h1, h2 {
+      color: #93c5fd;
       text-align: center;
     }
 
-    h1 {
-      color: #93c5fd;
+    .box {
+      background: rgba(2, 6, 23, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
-    hr {
-      border: 1px solid #334155;
-      margin: 30px 0;
+    .warning {
+      color: #f87171;
+      font-weight: bold;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #cbd5f5;
+      margin-top: 20px;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- NEWS TICKER -->
-  <div class="news-bar">
-    <div class="news-text">
-      📰 ಕರ್ನಾಟಕ ಸುದ್ದಿ: ಇಂದು ಬೆಂಗಳೂರುದಲ್ಲಿ ಭಾರಿ ಮಳೆ | 
-      ಸರ್ಕಾರದಿಂದ ಹೊಸ ಯೋಜನೆ ಘೋಷಣೆ | 
-      ಉದ್ಯೋಗ ಅವಕಾಶಗಳು ಹೆಚ್ಚಳ
-    </div>
+  <div class="header">
+    <span>⚠️ ಜಾಗೃತಿ ಸುದ್ದಿ: ವಂಚನೆಗಳಿಂದ ಎಚ್ಚರಿಕೆ ವಹಿಸಿ | ಯಾವುದೇ ಅನುಮಾನಾಸ್ಪದ ಕರೆ/ಮೆಸೇಜ್‌ಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ</span>
   </div>
 
-  <!-- MAIN CONTENT -->
   <div class="container">
-    <h1>ನಮಸ್ಕಾರ 🙏</h1>
-    <p>I am Ajay</p>
-    <p>Diploma Computer Science Student</p>
+    <h1>🚨 ಕರ್ನಾಟಕ ವಂಚನೆ ಜಾಗೃತಿ</h1>
 
-    <hr>
+    <div class="box">
+      <h2>ಸಾಮಾನ್ಯ ವಂಚನೆ ವಿಧಗಳು</h2>
+      <ul>
+        <li>ನಕಲಿ ಉದ್ಯೋಗ ಆಫರ್‌ಗಳು</li>
+        <li>ಲಾಟರಿ / ಬಹುಮಾನ ಮೆಸೇಜ್‌ಗಳು</li>
+        <li>OTP ಕೇಳುವ ಕರೆಗಳು</li>
+        <li>ನಕಲಿ ಬ್ಯಾಂಕ್ ಲಿಂಕ್‌ಗಳು</li>
+      </ul>
+    </div>
 
-    <h2>About Me</h2>
-    <p>
-      ನಾನು ವೆಬ್ ಡೆವಲಪ್ಮೆಂಟ್ ಕಲಿಯುತ್ತಿರುವ ವಿದ್ಯಾರ್ಥಿ.
-      ಈ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು HTML ಮತ್ತು CSS ಬಳಸಿ ನಿರ್ಮಿಸಿದ್ದೇನೆ.
+    <div class="box">
+      <h2>ಉದಾಹರಣೆ (Sample Case)</h2>
+      <p>
+        <span class="warning">⚠️ ಇದು ಕೇವಲ ಉದಾಹರಣೆ ಮಾತ್ರ</span><br><br>
+        ಒಂದು ಅಜ್ಞಾತ ಕರೆ ಬಂದಿದ್ದು, ಬಹುಮಾನ ಗೆದ್ದಿದ್ದೀರಿ ಎಂದು ತಿಳಿಸಿದೆ.
+        ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಕೇಳಲಾಗಿದೆ.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>ಹೇಗೆ ತಪ್ಪಿಸಿಕೊಳ್ಳಬೇಕು?</h2>
+      <ul>
+        <li>ಯಾರಿಗೂ OTP ಕೊಡಬೇಡಿ</li>
+        <li>ಅಜ್ಞಾತ ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡಬೇಡಿ</li>
+        <li>ಸಂದೇಹ ಇದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ</li>
+      </ul>
+    </div>
+
+    <p class="note">
+      ❗ ಈ ವೆಬ್‌ಸೈಟ್ ಕೇವಲ ಜಾಗೃತಿ ಮತ್ತು ಶಿಕ್ಷಣ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ.
+      ಇದು ಯಾವುದೇ ನಿಜವಾದ ಆರೋಪ ಅಥವಾ ಮಾಹಿತಿ ನೀಡುವುದಿಲ್ಲ.
     </p>
-
-    <hr>
-
-    <h2>Skills</h2>
-    <p>HTML • CSS • GitHub Pages</p>
   </div>
 
 </body>
