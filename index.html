@@ -3,96 +3,102 @@
 <html lang="kn">
 <head>
   <meta charset="UTF-8">
-  <title>Karnataka Awareness</title>
+  <title>Karnataka Page</title>
 
   <style>
     body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  color: #e5e7eb;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
 
-  background-image:
-    linear-gradient(
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.45)
-    ),
-    url("karnataka.jpg");
+      background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("karnataka.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    /* RUNNING HEADLINE */
+    .news-bar {
+      background-color: #020617;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 10px 0;
+    }
 
-    /* TOP NEWS BAR */
-    .news {
-      background-color: #111827;
+    .news-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
       color: #facc15;
-      padding: 10px;
       font-weight: bold;
-      text-align: center;
     }
 
-    .container {
-      max-width: 600px;
-      margin: 30px auto;
-      background-color: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
     }
 
-    h1, h2 {
+    /* FULL PAGE CONTENT */
+    .content {
+      padding: 40px;
+      max-width: 100%;
+    }
+
+    h1 {
       color: #93c5fd;
       text-align: center;
     }
 
-    ul {
-      line-height: 1.8;
+    h2 {
+      color: #facc15;
+      margin-top: 40px;
     }
 
-    .warning {
-      color: #f87171;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 20px;
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 20px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="news">
-    ⚠️ ಕರ್ನಾಟಕ ಜಾಗೃತಿ: ಅಜ್ಞಾತ ಕರೆ ಮತ್ತು ಲಿಂಕ್‌ಗಳಿಂದ ಎಚ್ಚರಿಕೆ ವಹಿಸಿ
+  <!-- RUNNING HEADLINE -->
+  <div class="news-bar">
+    <div class="news-text">
+      📰 ಕರ್ನಾಟಕ ಸುದ್ದಿ: ಸಾರ್ವಜನಿಕ ಜಾಗೃತಿ ಮಾಹಿತಿ ಮಾತ್ರ | ಅಜ್ಞಾತ ಕರೆ ಮತ್ತು ಲಿಂಕ್‌ಗಳಿಂದ ಎಚ್ಚರಿಕೆ ವಹಿಸಿ
+    </div>
   </div>
 
-  <div class="container">
-    <h1>🚨 ವಂಚನೆ ಜಾಗೃತಿ</h1>
+  <!-- FULL PAGE CONTENT -->
+  <div class="content">
+    <h1>ನಮಸ್ಕಾರ 🙏</h1>
+    <p style="text-align:center;"> — Diploma Computer Science Student</p>
 
-    <h2>ಸಾಮಾನ್ಯ ವಂಚನೆ ವಿಧಗಳು</h2>
-    <ul>
-      <li>ನಕಲಿ ಉದ್ಯೋಗ ಆಫರ್</li>
-      <li>ಲಾಟರಿ / ಬಹುಮಾನ ಮೆಸೇಜ್</li>
-      <li>OTP ಕೇಳುವ ಕರೆ</li>
-      <li>ನಕಲಿ ಬ್ಯಾಂಕ್ ಲಿಂಕ್</li>
-    </ul>
-
-    <h2>ಉದಾಹರಣೆ (Sample)</h2>
+    <h2>About</h2>
     <p>
-      ಇದು ಕೇವಲ ಉದಾಹರಣೆ ಮಾತ್ರ.  
-      ಯಾವುದೇ ನಿಜವಾದ ವ್ಯಕ್ತಿ ಅಥವಾ ಹಣದ ವಿವರ ಇಲ್ಲ.
+      ನಾನು ವೆಬ್ ಡೆವಲಪ್ಮೆಂಟ್ ಕಲಿಯುತ್ತಿರುವ ವಿದ್ಯಾರ್ಥಿ.
+      HTML ಮತ್ತು CSS ಬಳಸಿ ಈ ವೆಬ್‌ಸೈಟ್ ನಿರ್ಮಿಸಲಾಗಿದೆ.
+      ಈ ಪುಟ ಸಂಪೂರ್ಣವಾಗಿ ಶಿಕ್ಷಣ ಮತ್ತು ಅಭ್ಯಾಸ ಉದ್ದೇಶಕ್ಕಾಗಿ.
     </p>
 
-    <h2>ಹೇಗೆ ತಪ್ಪಿಸಿಕೊಳ್ಳಬೇಕು?</h2>
+    <h2>ಜಾಗೃತಿ ಮಾಹಿತಿ</h2>
     <ul>
-      <li>OTP ಯಾರಿಗೂ ಕೊಡಬೇಡಿ</li>
-      <li>ಅಜ್ಞಾತ ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡಬೇಡಿ</li>
-      <li>ಸಂದೇಹ ಇದ್ದರೆ 1930 ಗೆ ಕರೆ ಮಾಡಿ</li>
+      <li>OTP ಯಾರಿಗೂ ನೀಡಬೇಡಿ</li>
+      <li>ಅಜ್ಞಾತ ಲಿಂಕ್‌ಗಳನ್ನು ಕ್ಲಿಕ್ ಮಾಡಬೇಡಿ</li>
+      <li>ಸಂದೇಹಾಸ್ಪದ ಕರೆಗಳನ್ನು ತಕ್ಷಣ ಮುಚ್ಚಿ</li>
+      <li>ಅಗತ್ಯವಿದ್ದರೆ 1930 ಗೆ ಸಂಪರ್ಕಿಸಿ</li>
     </ul>
 
-    <p class="warning">
-      ❗ ಈ ವೆಬ್‌ಸೈಟ್ ಶಿಕ್ಷಣ ಮತ್ತು ಜಾಗೃತಿಗಾಗಿ ಮಾತ್ರ
-    </p>
+    <h2>Skills</h2>
+    <p>HTML • CSS • GitHub Pages</p>
   </div>
 
 </body>
