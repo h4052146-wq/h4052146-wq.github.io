@@ -1,245 +1,98 @@
 <!DOCTYPE html>
 <html lang="kn">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ಕರ್ನಾಟಕ ಮತ್ತು ಭಾರತೀಯ ಸ್ಕ್ಯಾಮ್ ದಾಖಲೆ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ಕರ್ನಾಟಕ ಮತ್ತು ಭಾರತ ಸ್ಕ್ಯಾಮ್ ದಾಖಲೆ</title>
+
 <style>
-  <style>
 body{
   margin:0;
-  min-height:100vh;
+  font-family: Arial, sans-serif;
   background:url('bg.jpg') no-repeat center center fixed;
   background-size:cover;
+  color:white;
+}
+
+.overlay{
+  background:rgba(0,0,0,0.65);
+  min-height:100vh;
+}
+
+header{
+  position:sticky;
+  top:0;
+  background:rgba(0,0,0,0.85);
+  padding:12px;
+  border-bottom:3px solid red;
+}
+
+header h1{
+  margin:0;
+  color:#ffcc00;
+  text-align:center;
+}
+
+marquee{
+  margin-top:8px;
+  color:#ff6666;
+  font-weight:bold;
+}
+
+section{
+  max-width:1100px;
+  margin:40px auto;
+  padding:30px;
+  background:rgba(0,0,0,0.6);
+  border-radius:12px;
+}
+
+h2{
+  color:#ffcc00;
+  border-left:6px solid #ffcc00;
+  padding-left:10px;
+}
+
+h3{color:#ff8888}
+
+ul{line-height:1.8}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+th,td{
+  border:1px solid #555;
+  padding:10px;
+}
+th{
+  background:#111;
+  color:#ffcc00;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,0.85);
+  color:#aaa;
 }
 </style>
-  /* ಮೂಲ ಶೈಲಿ */
-  :root{--accent:#ffcc00;--muted:#bfc7cf;--card-bg:rgba(0,0,0,0.62)}
-  html,body{height:100%;margin:0;font-family:Arial, Helvetica, sans-serif;background:#000}
-  /* background image will be set on #hero via JS */
-  .overlay{background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55));min-height:100%}
-
-  header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,0.75);border-bottom:4px solid #a00;padding:12px 16px;display:flex;align-items:center;gap:16px}
-  header h1{margin:0;color:var(--accent);font-size:18px}
-  header .controls{margin-left:auto;display:flex;gap:8px}
-  button.kbtn{background:#a00;color:#fff;border:none;padding:8px 10px;border-radius:8px;cursor:pointer;font-weight:bold}
-  button.kbtn.secondary{background:#333;color:var(--accent);border:1px solid #555}
-
-  marquee.kmar{display:block;padding:6px 10px;background:#111;color:#ff6666;font-weight:700;border-radius:6px;margin-left:8px}
-  main{max-width:1100px;margin:30px auto;padding:0 16px 120px}
-
-  section.page-section{margin:40px 0;padding:30px;border-radius:12px;background:var(--card-bg);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
-  section.page-section h2{color:var(--accent);margin-top:0;padding-left:8px;border-left:6px solid var(--accent)}
-  section.page-section h3{color:#ff7777;margin-bottom:6px}
-  section.page-section p, section.page-section li{color:#e6ebef}
-  .small{color:var(--muted);font-size:13px;margin-bottom:10px}
-  ul{margin:8px 0 0 18px;padding:0}
-  .table{width:100%;overflow:auto;margin-top:12px}
-  table{width:100%;border-collapse:collapse;color:#fff}
-  th,td{border:1px solid #444;padding:8px;text-align:left;font-size:14px}
-  th{background:#111;color:var(--accent)}
-
-  /* hero (page2 feel) placeholder; JS sets background image on #hero */
-  #hero{min-height:380px;display:flex;align-items:center;justify-content:center;padding:40px 16px;background-size:cover;background-position:center;background-repeat:no-repeat}
-  #hero .card{max-width:1000px;background:rgba(0,0,0,0.55);padding:28px;border-radius:12px}
-
-  /* footer */
-  footer{padding:20px;text-align:center;color:#9aa3ab;margin-top:30px}
-
-  /* small responsive */
-  @media(max-width:640px){
-    header h1{font-size:15px}
-    .kbtn{padding:7px 8px;font-size:13px}
-    #hero{min-height:260px}
-  }
-</style>
 </head>
+
 <body>
-  <div class="overlay">
-    <header>
-      <h1>ಕರ್ನಾಟಕ ಮತ್ತು ಭಾರತ – ಸ್ಕ್ಯಾಮ್ ದಾಖಲೆ</h1>
-      <marquee class="kmar" behavior="scroll" direction="left" scrollamount="6">
-        ⚠️ ಸುದ್ದಿಗಳು: ಕರ್ನಾಟಕ MUDA ತನಿಖೆ ‧ ಪಿಎನ್‌ಬಿ ‧ 2G ‧ ಕಲ್ಲಿದ್ದಲು ‧ CWG ‧ Satyam ‧ Saradha — ಪರಿಶೀಲನೆಗೆ ಒಳಪಟ್ಟ ಮಾಹಿತಿ ಮಾತ್ರ ⚠️
-      </marquee>
+<div class="overlay">
 
-      <div class="controls" aria-hidden="false">
-        <button id="toggleScroll" class="kbtn">Auto Scroll ನಿಲ್ಲಿಸು</button>
-        <button id="jumpTop" class="kbtn secondary">ಮೇಲೆ</button>
-      </div>
-    </header>
+<header>
+<h1>ಕರ್ನಾಟಕ ಮತ್ತು ಭಾರತೀಯ ರಾಜಕೀಯ ಸ್ಕ್ಯಾಮ್‌ಗಳು</h1>
+<marquee>⚠️ MUDA | ವಾಲ್ಮೀಕಿ | PSI | PNB | 2G | Coalgate | CWG | Satyam | Saradha ⚠️</marquee>
+</header>
 
-    <!-- HERO (background section for page2 feeling) -->
-    <div id="hero" role="region" aria-label="ಮೇಲೆ background ವಿಭಾಗ">
-      <div class="card">
-        <h2 style="color:var(--accent);margin:0 0 6px 0">📰 ಭಾರತ ಮತ್ತು ಕರ್ನಾಟಕದ ಪ್ರಮುಖ ಸ್ಕ್ಯಾಮ್‌ಗಳ ಸಂಪೂರ್ಣ ದಾಖಲೆ</h2>
-        <p class="small">ಇದು ಕಂಡು ಬಂದ ಸತ್ಯಗಳು, ತನಿಖಾ ವರದಿಗಳು ಮತ್ತು ಅಧಿಕೃತ ಪ್ರಕಟಣೆಗಳ ಆಧಾರದ ಮೇಲೆ ಸಂಕ್ಷಿಪ್ತ ಮಾಹಿತಿ. ಆರೋಪ ಮತ್ತು ಸಾಬೀತುಗಳನ್ನು ಬೇರ್ಪಡಿಸಲಾಗಿದೆ.</p>
-        <p style="color:#e6ebef;margin:6px 0 0 0">Auto-scroll ಆರಂಭವಾಗುತ್ತದೆ — ಅವಶ್ಯಕತೆ ಇದ್ದಲ್ಲಿ “Auto Scroll ನಿಲ್ಲಿಸು” ಒತ್ತಿ.</p>
-      </div>
-    </div>
+<!-- KARNATAKA -->
+<section>
+<h2>ಕರ್ನಾಟಕ – ಪ್ರಮುಖ ಸ್ಕ್ಯಾಮ್‌ಗಳು</h2>
 
-    <main id="mainContent">
-      <!-- ಗರಿಷ್ಠ ಉದ್ದದ ಲಾಂಗ್ ವಿಷಯ: Karnataka detailed section -->
-      <section id="karnataka" class="page-section">
-        <h2>ಕರ್ನಾಟಕ — ಪ್ರಮುಖ ಪ್ರಕರಣಗಳು</h2>
-        <p class="small">ಈ ಭಾಗದಲ್ಲಿ 2022–2025 ಒಳಗೊಂಡ ಪ್ರಮುಖ ಪ್ರಕರಣಗಳನ್ನು ವಿವರಿಸಲಾಗಿದ್ದು, ಯಾರಿಗೆ ಸಂಬಂಧಿಸಿದೆ ಮತ್ತು ಎಷ್ಟು ಮೌಲ್ಯವನ್ನು ಒಳಗೊಂಡಿದೆ ಎಂಬುದನ್ನು ವಿಭಜಿಸಲಾಗಿದೆ.</p>
-
-        <article>
-          <h3>MUDA ಸ್ಕ್ಯಾಮ್ (ಮೈಸೂರು ನಗರಾಭಿವೃದ್ಧಿ ಪ್ರಾಧಿಕಾರ)</h3>
-          <p>ED (ಎನ್‌ಫೋರ್ಸ್‌ಮೆಂಟ್ ಡೈರೆಕ್ಟರೇಟ್)‌ನ ತನಿಖೆಯಲ್ಲಿ MUDA ಗೆ ಸಂಬಂಧಿಸಿದ ಅನೇಕ ಸೈಟ್‌ಗಳ ಹಾಗೂ ಜಮೀನಿನ ಮೇಲೆ ಆಸ್ತಿ ಜಪ್ತಿ ವರದಿಗಳು ಬಂದಿವೆ. ತನಿಖೆಯ ಘೋಷಿತ ಜಪ್ತಿ ಮೌಲ್ಯ लगभग ₹300–₹400 ಕೋಟಿ ಎಂದು ವರದियां ಸೂಚಿಸುತ್ತವೆ.</p>
-          <ul>
-            <li><b>ಯಾರು:</b> MUDA ಸಂಬಂಧಾಧಿಕಾರಿಗಳು; ಕೆಲವು ಪ್ರಕರಣಗಳಲ್ಲಿ ಆಸ್ತಿ ಸ್ವಾಮ್ಯಗಳ ಸ್ಪರ್ಶ ರಾಜಕೀಯ ನಾಯಕರು ಎಂದು ಆರೋಪ.</li>
-            <li><b>ಹೇಗೆ:</b> site allotment ನಿಯಮ ಉಲ್ಲಂಘಿಸಿ, ಪ್ರೋತ್ಸಾಹಿತ ವಲಯಗಳಿಗೆ ಅಕ್ರಮ ಹಂಚಿಕೆ.</li>
-            <li><b>ಸ್ಥಿತಿ:</b> ED ತನಿಖೆ; ಕೆಲವು ಆಸ್ತಿಗಳ ಜಪ್ತಿ; ಕಾನೂನು ಪ್ರಕ್ರಿಯೆ ಮುಂದುವರ್ತಿದೆ.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>ವಾಲ್ಮೀಕಿ ನಿಗಮ ಪ್ರಕರಣ</h3>
-          <p>ಕಲ್ಯಾಣ ನಿಧಿಗಳ ದುರುಪಯೋಗ ಕುರಿತಾದ ವರದಿಗಳಲ್ಲಿ ಪ್ರಮುಖ ತನಿಖಾ ಕ್ರಮಗಳು ನಡೆದಿದ್ದು, ಕೆಲವು ವಿಚಾರಗಳಲ್ಲಿ ₹90–₹100 ಕೋಟಿ ಮಟ್ಟದ ದುರುಪಯೋಗ ದಾಖಲಾಗಿದೆ.</p>
-          <ul>
-            <li><b>ಯಾರು:</b> ನಿಗಮ ಅಧಿಕಾರಿಗಳು ಮತ್ತು ಕೆಲವು ಸ್ಥಳೀಯ ಕಾರಣಿಗಳ ಜೊತೆ ಸಂಬಂಧ.</li>
-            <li><b>ಹೇಗೆ:</b> ನಕಲಿ ಖಾತೆಗಳು ಮತ್ತು ದುರುಪಯೋಗದ ದಾಖಲೆಗಳ ಮೂಲಕ ಹಣ ವ್ಯತ್ಯಯ.</li>
-            <li><b>ಸ್ಥಿತಿ:</b> ತನಿಖೆ ಮತ್ತು ಆಸ್ತಿ ಜಪ್ತಿ.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>PSI ನೇಮಕಾತಿ ಸ್ಕ್ಯಾಮ್</h3>
-          <p>ನಿಯೋಜನೆ ಹಗರಣಗಳಲ್ಲಿ ಲಂಚದ ಚೆಲುವುಗಳು ದಾಖಲಾಗಿದ್ದು, ಕೆಲವು ಪ್ರಕರಣಗಳಲ್ಲಿ ₹1.5 ಕೋಟಿ ವರೆಗೆ ಸೀಜ್ ದಾಖಲಾಗಿವೆ.</p>
-          <ul>
-            <li><b>ಯಾರು:</b> ಅಧಿಕಾರಿಗಳಿಗೇ ಸಂಬಂಧ.</li>
-            <li><b>ಹೇಗೆ:</b> selection ಪ್ರಕ್ರಿಯೆ ಮ್ಯಾನಿಪುಲೇಶನ್ ಮೂಲಕ.</li>
-            <li><b>ಸ್ಥಿತಿ:</b> ಬಂಧನ ಮತ್ತು ತನಿಖಾ ಕ್ರಮ.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>ಇಂಜಿನಿಯರಿಂಗ್ ಸೀಟ್ ಬ್ಲಾಕಿಂಗ್</h3>
-          <p>ಖಾಸಗಿ ಕಾಲೇಜು ಗುತ್ತಿಗೆದಾರರು ಹಾಗೂ ಟ್ರಸ್ಟ್ ಗಳ ಮೂಲಕ ಕಪ್ಪು ಹಣದ ಪ್ರವೇಶಗಳು ದಾಖಲಾಗಿವೆ; ED ಮೂಲಕ assets seizure ವರದಿ ಇದೆ (ಸುಮಾರು ₹19.4 ಕೋಟಿ).</p>
-        </article>
-      </section>
-
-      <!-- India wide table -->
-      <section id="india" class="page-section">
-        <h2>ಭಾರತದ ಪ್ರಮುಖ ಸ್ಕ್ಯಾಮ್‌ಗಳು — ರಾಜ್ಯಾನುಸಾರ</h2>
-        <div class="table">
-          <table>
-            <thead>
-              <tr><th>ರಾಜ್ಯ / ಕೇಂದ್ರ</th><th>ಸ್ಕ್ಯಾಮ್</th><th>ವರ್ಷ</th><th>ಯಾರು</th><th>ಹೇಗೆ</th><th>ಮೊತ್ತ (ಸುಮಾರು)</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>ಮಹಾರಾಷ್ಟ್ರ</td><td>PNB (LoU) ಸ್ಕ್ಯಾಮ್</td><td>2018</td><td>ನೀರವ್ ಮೋದಿ, ಮೆಹುಲ್ ಚೋಕ್ಸಿ</td><td>ನಕಲಿ LoU ಮೂಲಕ ವಂಚನೆ</td><td>₹14,000 ಕೋಟಿ</td></tr>
-              <tr><td>ದೆಶವ್ಯಾಪಿ</td><td>ವ್ಯವಸ್ಥಾಪಕ ಪರಾರಿಗಳು (Loans not repaid)</td><td>2010–2025</td><td>ವಿಜಯ್ ಮಲ್ಯಾ, ಇತರರು</td><td>ಬ್ಯಾಂಕ್ ಸಾಲ ವಾಪಸ್ ಮಾಡದಿರಿ</td><td>₹58,000 ಕೋಟಿ+</td></tr>
-              <tr><td>ಕೇಂದ್ರ</td><td>2G ಸ್ಪೆಕ್ಟ್ರಮ್</td><td>2008</td><td>ದೂರಸಂಪರ್ಕ ಇಲಾಖೆ, ಕಂಪನಿಗಳು</td><td>ಕಡಿಮೆ ದರದಲ್ಲಿ ಪರವಾನಗಿ ಹಂಚಿಕೆ</td><td>₹1.76 ಲಕ್ಷ ಕೋಟಿ</td></tr>
-              <tr><td>ಕೇಂದ್ರ / ರಾಜ್ಯ</td><td>ಕೋಆಲ್ ಆಲ್‌ಕೇಶನ್ (Coalgate)</td><td>2004–2009</td><td>ಕಳೆದ ಆಡಳಿತ / ಅಧಿಕಾರಿಗಳು</td><td>ಹರಾಜು ಇಲ್ಲದೆ ಹಂಚಿಕೆ</td><td>₹1.86 ಲಕ್ಷ ಕೋಟಿ</td></tr>
-              <tr><td>ದುದ್ದೆಲಿ (Delhi)</td><td>Commonwealth Games</td><td>2010</td><td>ಆಯೋಜನಾ ಸಮಿತಿ</td><td>ಹೊಚ್ಚೆ ದುರುಪಯೋಗ, ಗುತ್ತಿಗೆ ಅಕ್ರಮ</td><td>₹70,000 ಕೋಟಿ (ಆರೋಪ)</td></tr>
-              <tr><td>ಆಂಧ್ರಪ್ರದೇಶ</td><td>Satyam ಕಳ್ಳಲೆಕ್ಕ</td><td>2009</td><td>ಸಂಸ್ಥಾಪಕ</td><td>ಅಕೌಂಟ್ಫ್ರಾಡ್</td><td>₹14,000 ಕೋಟಿ</td></tr>
-              <tr><td>ಪಶ್ಚಿಮ ಬಂಗಾಳ</td><td>Saradha / ಚಿಟ್-ಫಂಡ್</td><td>2010–2015</td><td>ಖಾಸಗಿ ಸಂಸ್ಥೆಗಳು</td><td>Ponzi ಯೋಜನೆ</td><td>ಸಾವಿರ ಕೋಟಿ</td></tr>
-              <tr><td>ಉತ್ತರಪ್ರದೇಶ</td><td>PMC / Rotomac / Bank frauds</td><td>2015–2020</td><td>ಕರೋಬಾರಿ ಮತ್ತು ಬ್ಯಾಂಕ್ ಅಂತರಂಗ</td><td>ಲೋನ್ ಡೈವರ್ಷನ್</td><td>ಕೆಲಾಯ ಕೋಟಿ</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="small">ಕಡಿಮೆ-ಬೇಡ: ಮೇಲ್ಮುಖದ ಅಂಕಿಗಳು ವಿವಿಧ ವರದಿಗಳ ಸಂಗ್ರಹದಿಂದ ನೀಡಲಾಗಿದೆ; ಆರೋಪ ಮತ್ತು ಸಾಬೀತು ಬೇರೇನೇ.</p>
-      </section>
-
-      <!-- more extended sections to make page long -->
-      <section id="more1" class="page-section">
-        <h2>ಅಧಿಕ ವಿವರಣೆ — MUDA ಮತ್ತು ರಾಜ್ಯ ಮಟ್ಟದ ದಾಖಲೆ</h2>
-        <p>MUDA ಪ್ರಕರಣದ ವಿವರಗಳು ಮತ್ತು ಅನಿವಾರ್ಯ ದಾಖಲೆಗಳು — ಸೈಟ್ allotment ದಾಖಲೆ, ಜಮೀನು ಕಾಗದ ಪತ್ರಗಳು, ED ಸೆಜೆಸ್ಟಿಯನ್ ವರದಿ (ಸಾರಾಂಶ).</p>
-        <ul>
-          <li>ಜೊತೆಗೆ ಸಾರ್ವಜನಿಕ ದಾಖಲೆಗಳು ಮತ್ತು RTI ಮೂಲಕ ದೊರಕಿದ ಮಾಹಿತಿ ಸಂಗ್ರಹ.</li>
-          <li>ಜಪ್ತಿಯಾದ ಆಸ್ತಿಗಳ ಸ್ವರೂಪ: ಸೈಟ್ allotments, ಬ್ಯಾಂಕ್ ಖಾತೆಗಳು, fixed deposits.</li>
-        </ul>
-      </section>
-
-      <section id="more2" class="page-section">
-        <h2>ಅಭಿಪ್ರಾಯ ಮತ್ತು ನಿಷ್ಕರ್ಷೆ</h2>
-        <p>ಬೆರಗಿನ ರಾಜಕಾರಣ ಮತ್ತು ಉನ್ನತ ಅಧಿಕಾರಿಗಳ ಆಕ್ಷೇಪಣೆಗಳ ನಡುವಣ ವ್ಯತ್ಯಾಸ ಸ್ಪಷ್ಟವಾಗಬೇಕು. ನ್ಯಾಯಾಂಗ ತೀರ್ಪಿನ ಬಾಕಿ ಇರುವುದರಿಂದ, ಸಾರ್ವಜನಿಕರಿಗೆ ತ್ವರಿತ ನಿರ್ಣಯದ ಭರವಸೆ ಮತ್ತು ಪಾರದರ್ಶಕ ತನಿಖೆ ಅಗತ್ಯ.</p>
-      </section>
-
-    </main>
-
-    <footer>
-      © 2026 | ಸಾರ್ವಜನಿಕ ಅರಿವುಗಾಗಿ — ಎಲ್ಲಾ ಮಾಹಿತಿ ಸಾರ್ವಜನಿಕ ವರದಿಗಳಲ್ಲಿ ಆಧಾರಿತ
-    </footer>
-  </div>
-
-<script>
-/* ========== REQUIRED: background image filename ==========
-   Make sure you placed 'bg.jpg' in same folder as this file.
-   ========== AUTO-SCROLL LOGIC ========== */
-
-(function(){
-  // Auto-scroll variables
-  const autoScrollBtn = document.getElementById('toggleScroll');
-  const jumpTopBtn = document.getElementById('jumpTop');
-  const sections = Array.from(document.querySelectorAll('main > section'));
-  let idx = 0;
-  let scrolling = true;
-  const pauseMs = 6000; // time each section stays (ms)
-  const hero = document.getElementById('hero');
-
-  // Set hero background image from bg.jpg (if available)
-  try {
-    hero.style.backgroundImage = "url('bg.jpg')";
-    hero.style.backgroundSize = "cover";
-    hero.style.backgroundPosition = "center";
-    hero.style.backgroundRepeat = "no-repeat";
-  } catch(e){ /* ignore */ }
-
-  function scrollNext(){
-    if(!scrolling) return;
-    idx = (idx + 1) % sections.length;
-    const el = sections[idx];
-    if(!el) return;
-    el.scrollIntoView({behavior:'smooth',block:'start'});
-  }
-
-  // start auto scroll loop
-  let loop = setInterval(scrollNext, pauseMs);
-
-  // toggle button
-  autoScrollBtn.addEventListener('click', function(){
-    scrolling = !scrolling;
-    if(scrolling){
-      autoScrollBtn.textContent = 'Auto Scroll ನಿಲ್ಲಿಸು';
-      loop = setInterval(scrollNext, pauseMs);
-    } else {
-      autoScrollBtn.textContent = 'Auto Scroll ಪ್ರಾರಂಭಿಸು';
-      clearInterval(loop);
-    }
-  });
-
-  // jump top
-  jumpTopBtn.addEventListener('click', function(){
-    window.scrollTo({top:0,behavior:'smooth'});
-  });
-
-  // pause auto-scroll when user scrolls manually, resume after inactivity
-  let userTimer;
-  window.addEventListener('wheel', userInteraction);
-  window.addEventListener('touchstart', userInteraction);
-  window.addEventListener('scroll', userInteraction);
-
-  function userInteraction(){
-    if(!scrolling) return;
-    clearInterval(loop);
-    clearTimeout(userTimer);
-    userTimer = setTimeout(function(){
-      loop = setInterval(scrollNext, pauseMs);
-    }, 5000);
-  }
-
-  // Accessibility: stop auto scroll on focus
-  window.addEventListener('keydown', function(e){
-    if(e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'PageUp' || e.key === 'PageDown'){
-      clearInterval(loop);
-      scrolling = false;
-      autoScrollBtn.textContent = 'Auto Scroll ಪ್ರಾರಂಭಿಸು';
-    }
-  });
-
-})();
-</script>
-</body>
-</html>
+<h3>MUDA ಸ್ಕ್ಯಾಮ್</h3>
+<ul>
+<li><b>ಯಾರು:</b> MUDA ಅಧಿಕಾರಿಗಳು (ರಾಜಕೀಯ ಆರೋಪ)</li>
+<li><b>ಹೇಗೆ:</b> ಅಕ್ರಮ ಸೈ
