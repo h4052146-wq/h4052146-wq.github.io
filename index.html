@@ -1,298 +1,189 @@
-
 <!DOCTYPE html>
 <html lang="kn">
 <head>
 <meta charset="UTF-8">
-<title>Breaking News | Karnataka Political Scams</title>
+<title>Karnataka Political Scams – Facts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{<!-- =========================================
- POLITICIANS SCAM – OLD SITE ADD-ON (ADVANCED)
-=========================================== -->
-
-<style>
-#ps-section{
-  max-width:1100px;
-  margin:70px auto;
-  padding:40px 20px;
-  background:#020617;
-  color:#e5e7eb;
-  border-top:4px solid #dc2626;
-}
-#ps-section h2{
-  color:#facc15;
-  border-left:5px solid #facc15;
-  padding-left:10px;
-}
-.ps-box{
-  margin:18px 0;
-  padding:15px;
-  background:#020617;
-  border:1px solid #334155;
-  border-radius:10px;
-}
-.ps-proved{color:#22c55e;font-weight:bold}
-.ps-alleged{color:#f97316;font-weight:bold}
-.ps-amount{
-  font-size:38px;
-  font-weight:bold;
-  color:#22c55e;
-}
-.ps-animate{
-  opacity:0;
-  transform:translateY(40px);
-  transition:0.6s ease;
-}
-.ps-animate.show{
-  opacity:1;
-  transform:none;
-}
-</style>
-
-<section id="politicians-scam" class="ps-animate">
-  <h2>Politicians Scammed Money – Who & When</h2>
-
-  <p>
-    ಕೆಳಗಿನ ಮಾಹಿತಿ <b>ಸಾಬೀತಾದ ದಾಖಲೆ</b> ಮತ್ತು
-    <b>ರಾಜಕೀಯ ಆರೋಪ</b> ಸ್ಪಷ್ಟವಾಗಿ ಬೇರ್ಪಡಿಸಿದೆ.
-  </p>
-
-  <div class="ps-box">
-    <div class="ps-amount">₹<span id="counter">0</span> ಕೋಟಿ</div>
-    👉 ಇದುವರೆಗೂ <b>ಸಾಬೀತಾದ ರಾಜಕೀಯ ಸ್ಕ್ಯಾಮ್ ಹಣ</b>
-  </div>
-
-  <h3 class="ps-proved">✅ PROVED CASES</h3>
-
-  <div class="ps-box">
-    <b>ವಾಲ್ಮೀಕಿ ನಿಗಮ – ₹94 ಕೋಟಿ (2024)</b><br>
-    <b>ಯಾರು:</b> ಬಿ. ನಾಗೇಂದ್ರ (ಹಳೆಯ ಸಚಿವ)<br>
-    • Welfare funds diversion<br>
-    • Fake bank accounts
-  </div>
-
-  <div class="ps-box">
-    <b>PSI ನೇಮಕಾತಿ – ₹1.5 ಕೋಟಿ (2022)</b><br>
-    <b>ಯಾರು:</b> IPS ಅಧಿಕಾರಿ ಅಮೃತ್ ಪಾಲ್<br>
-    • Cash-for-job<br>
-    • Exam manipulation
-  </div>
-
-  <div class="ps-box">
-    <b>Engineering Seat Blocking – ₹19.4 ಕೋಟಿ (2023)</b><br>
-    <b>ಯಾರು:</b> Private college trustees<br>
-    • Education mafia<br>
-    • Black money admissions
-  </div>
-
-  <h3 class="ps-alleged">⚠️ ALLEGED (NOT PROVED)</h3>
-
-  <div class="ps-box">
-    <b>Liquor Policy Scam – ₹2,500 ಕೋಟಿ (2025)</b><br>
-    <b>ಯಾರು:</b> Excise ministry (current govt)<br>
-    • Assembly allegation<br>
-    ❗ Court verdict ಇಲ್ಲ
-  </div>
-
-  <div class="ps-box">
-    ✔️ <b>Proved:</b> ₹115 ಕೋಟಿ<br>
-    ⚠️ <b>Alleged:</b> ₹2,500 ಕೋಟಿ
-  </div>
-</section>
-
-<script>
-/* SCROLL ANIMATION */
-const sec=document.getElementById("politicians-scam");
-window.addEventListener("scroll",()=>{
-  const top=sec.getBoundingClientRect().top;
-  if(top < window.innerHeight-100){
-    sec.classList.add("show");
-  }
-});
-
-/* COUNTER ANIMATION */
-let count=0;
-let target=115;
-let interval=setInterval(()=>{
-  count++;
-  document.getElementById("counter").innerText=count;
-  if(count>=target) clearInterval(interval);
-},20);
-</script>
+body{
   margin:0;
   font-family: Arial, sans-serif;
   background:#0b1220;
   color:#e5e7eb;
-}
-a{text-decoration:none;color:inherit}
-
-/* TOP BREAKING BAR */
-.breaking{
-  background:#b91c1c;
-  color:#fff;
-  padding:10px;
-  font-weight:bold;
-  overflow:hidden;
-}
-.breaking span{
-  display:inline-block;
-  padding-left:100%;
-  animation:scroll 18s linear infinite;
-}
-@keyframes scroll{
-  from{transform:translateX(0)}
-  to{transform:translateX(-100%)}
+  line-height:1.6;
 }
 
 /* HEADER */
 header{
+  position:sticky;
+  top:0;
+  z-index:10;
   background:#020617;
   padding:20px;
-  border-bottom:2px solid #dc2626;
+  border-bottom:4px solid #dc2626;
 }
 header h1{
   margin:0;
   color:#facc15;
 }
-header p{
-  margin:5px 0 0;
-  color:#94a3b8;
-}
-
-/* LAYOUT */
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:20px;
-  display:grid;
-  grid-template-columns:2fr 1fr;
-  gap:20px;
-}
-@media(max-width:900px){
-  .container{grid-template-columns:1fr}
-}
-
-/* MAIN NEWS */
-.main{
-  background:#020617;
-  padding:20px;
-  border-radius:12px;
-  border:1px solid #1e293b;
-}
-.main h2{
-  color:#f87171;
-}
-.amount{
-  font-size:32px;
-  color:#22c55e;
+nav a{
+  color:#38bdf8;
+  margin-right:15px;
   font-weight:bold;
+  text-decoration:none;
 }
 
-/* NEWS CARDS */
-.card{
-  background:#020617;
-  padding:15px;
-  border-radius:10px;
-  border:1px solid #1e293b;
-  margin-bottom:15px;
+/* SECTION */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
 }
-.card h3{
-  margin:0 0 8px;
-  color:#facc15;
+h2{
+  color:#f87171;
+  border-left:5px solid #f87171;
+  padding-left:10px;
+}
+.box{
+  background:#020617;
+  border:1px solid #1e293b;
+  border-radius:12px;
+  padding:20px;
+  margin:20px 0;
 }
 .tag{
   font-size:12px;
+  font-weight:bold;
   padding:4px 8px;
   border-radius:6px;
-  font-weight:bold;
 }
-.proved{background:#14532d;color:#22c55e}
-.alleged{background:#7c2d12;color:#f97316}
-
-/* SIDEBAR */
-.sidebar h3{
-  margin-top:0;
-  color:#38bdf8;
+.PROVED{background:#14532d;color:#22c55e}
+.ALLEGED{background:#7c2d12;color:#f97316}
+.amount{
+  font-size:36px;
+  font-weight:bold;
+  color:#22c55e;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:15px;
+  padding:20px;
   background:#020617;
   color:#94a3b8;
-  margin-top:40px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="breaking">
-  <span>
-  BREAKING: ಕರ್ನಾಟಕದಲ್ಲಿ ಸಾಬೀತಾದ ರಾಜಕೀಯ ಸ್ಕ್ಯಾಮ್ ಹಣ ₹115 ಕೋಟಿ |
-  Liquor policy ₹2,500 ಕೋಟಿ ಆರೋಪ – ಕೋರ್ಟ್ ತೀರ್ಪಿಲ್ಲ |
-  FACTS ONLY – NO POLITICAL PROPAGANDA
-  </span>
-</div>
-
 <header>
-  <h1>Karnataka Scam News</h1>
-  <p>Independent | Fact-based | Kannada</p>
+  <h1>Karnataka Political Scams – FACTS ONLY</h1>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#proved">Proved</a>
+    <a href="#alleged">Alleged</a>
+    <a href="#who">Who & When</a>
+    <a href="#summary">Summary</a>
+  </nav>
 </header>
 
-<div class="container">
-
-<!-- MAIN STORY -->
-<div class="main">
-  <h2>TOP STORY</h2>
-  <p>
-    “ಕರ್ನಾಟಕದಲ್ಲಿ ರಾಜಕಾರಣಿಗಳು ಸಾವಿರಾರು ಕೋಟಿ ಲೂಟಿ ಮಾಡಿದ್ದಾರೆ” ಅನ್ನೋ ಮಾತು ಹರಡಿದೆ.
+<!-- OVERVIEW -->
+<section id="overview">
+  <h2>Overview</h2>
+  <div class="box">
+    “ಕರ್ನಾಟಕದಲ್ಲಿ ರಾಜಕಾರಣಿಗಳು ಸಾವಿರಾರು ಕೋಟಿ ಲೂಟಿ ಮಾಡಿದ್ದಾರೆ” ಅನ್ನೋ ಮಾತು ಇದೆ.  
     ಆದರೆ ದಾಖಲೆ ಆಧಾರದ ಮೇಲೆ ನೋಡಿದ್ರೆ ಸತ್ಯ ಬೇರೆ.
-  </p>
-
-  <p class="amount">₹115 ಕೋಟಿ</p>
-  <p>👉 ಇಷ್ಟೇ ಹಣ **ಸಾಬೀತಾದ ರಾಜಕೀಯ ಸ್ಕ್ಯಾಮ್**ಗಳಲ್ಲಿ trace ಆಗಿದೆ.</p>
-
-  <p>
-    Liquor policy ಸಂಬಂಧ **₹2,500 ಕೋಟಿ ಆರೋಪ** ಇದೆ,  
-    ಆದರೆ ಇದು <b>ಕೋರ್ಟ್ ತೀರ್ಪಿಲ್ಲದ allegation</b>.
-  </p>
-</div>
-
-<!-- SIDEBAR -->
-<div class="sidebar">
-
-  <h3>Latest Scam Updates</h3>
-
-  <div class="card">
-    <span class="tag proved">PROVED</span>
-    <h3>ವಾಲ್ಮೀಕಿ ನಿಗಮ – ₹94 ಕೋಟಿ</h3>
-    <p>Welfare funds misuse, official investigation.</p>
   </div>
 
-  <div class="card">
-    <span class="tag proved">PROVED</span>
-    <h3>PSI ನೇಮಕಾತಿ – ₹1.5 ಕೋಟಿ</h3>
-    <p>Cash-for-job scam in police recruitment.</p>
+  <div class="box">
+    <div class="amount">₹<span id="counter">0</span> ಕೋಟಿ</div>
+    👉 ಇದುವರೆಗೂ <b>ಸಾಬೀತಾದ ರಾಜಕೀಯ ಸ್ಕ್ಯಾಮ್ ಹಣ</b>
+  </div>
+</section>
+
+<!-- PROVED -->
+<section id="proved">
+  <h2>✅ PROVED CASES</h2>
+
+  <div class="box">
+    <span class="tag PROVED">PROVED</span>
+    <h3>ವಾಲ್ಮೀಕಿ ನಿಗಮ – ₹94 ಕೋಟಿ (2024)</h3>
+    <p><b>ಯಾರು:</b> ಬಿ. ನಾಗೇಂದ್ರ (ಹಳೆಯ ಸಚಿವ)</p>
+    <p>Welfare funds diversion, fake accounts</p>
   </div>
 
-  <div class="card">
-    <span class="tag proved">PROVED</span>
-    <h3>Seat Blocking – ₹19.4 ಕೋಟಿ</h3>
-    <p>Education mafia with political backing.</p>
+  <div class="box">
+    <span class="tag PROVED">PROVED</span>
+    <h3>PSI ನೇಮಕಾತಿ – ₹1.5 ಕೋಟಿ (2022)</h3>
+    <p><b>ಯಾರು:</b> IPS ಅಧಿಕಾರಿ ಅಮೃತ್ ಪಾಲ್</p>
+    <p>Cash-for-job, exam manipulation</p>
   </div>
 
-  <div class="card">
-    <span class="tag alleged">ALLEGED</span>
-    <h3>Liquor Policy – ₹2,500 ಕೋಟಿ</h3>
-    <p>Assembly allegation, no court verdict.</p>
+  <div class="box">
+    <span class="tag PROVED">PROVED</span>
+    <h3>Engineering Seat Blocking – ₹19.4 ಕೋಟಿ (2023)</h3>
+    <p><b>ಯಾರು:</b> Private college trustees</p>
+    <p>Education mafia, black money admissions</p>
   </div>
+</section>
 
-</div>
+<!-- ALLEGED -->
+<section id="alleged">
+  <h2>⚠️ ALLEGED (NOT PROVED)</h2>
 
-</div>
+  <div class="box">
+    <span class="tag ALLEGED">ALLEGED</span>
+    <h3>Liquor Policy Scam – ₹2,500 ಕೋಟಿ (2025)</h3>
+    <p><b>ಯಾರು:</b> Excise ministry (current govt)</p>
+    <p>Assembly allegation only. Court verdict ಇಲ್ಲ.</p>
+  </div>
+</section>
+
+<!-- WHO & WHEN -->
+<section id="who">
+  <h2>🧑‍⚖️ Who & When</h2>
+  <div class="box">
+    <p><b>2022:</b> PSI Recruitment – ₹1.5 ಕೋಟಿ</p>
+    <p><b>2023:</b> Engineering Seat Blocking – ₹19.4 ಕೋಟಿ</p>
+    <p><b>2024:</b> Valmiki Corporation – ₹94 ಕೋಟಿ</p>
+    <p><b>2025:</b> Liquor Policy – ₹2,500 ಕೋಟಿ (alleged)</p>
+  </div>
+</section>
+
+<!-- SUMMARY -->
+<section id="summary">
+  <h2>📊 Summary</h2>
+  <div class="box">
+    ✔️ <b>Proved scam money:</b> ₹115 ಕೋಟಿ<br>
+    ⚠️ <b>Alleged claims:</b> ₹2,500 ಕೋಟಿ<br><br>
+    ❌ Allegation ≠ Proof
+  </div>
+</section>
 
 <footer>
-© 2026 Karnataka Scam News | Information purpose only
+© 2026 Karnataka Scam Facts | Information purpose only
+</footer>
+
+<script>
+/* COUNTER ANIMATION */
+let count = 0;
+let target = 115;
+let speed = 20;
+
+window.addEventListener("load", () => {
+  const el = document.getElementById("counter");
+  const timer = setInterval(() => {
+    count++;
+    el.innerText = count;
+    if(count >= target){
+      clearInterval(timer);
+      el.innerText = target;
+    }
+  }, speed);
+});
+</script>
+
+</body>
+</html>
